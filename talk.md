@@ -222,3 +222,15 @@ To github.com:payne/deno-talk1.git
 
 is github for what the heck!
 
+---
+
+# [Red Burns lives on](https://rhizome.org/editorial/2013/aug/26/red-burns-lives-on/)
+
+
+## [“Technology is Not Enough”](https://rhizome.org/editorial/2013/aug/26/red-burns-lives-on/)
+
+### "consider the technology as a tool which, in itself, could do nothing,"
+
+### "treat the technology as something that everyone on the team could learn, understand, and explore freely."
+
+
