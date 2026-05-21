@@ -118,4 +118,14 @@ Log entry is:
 
 ---
 
+# await for the output to finish
+
+```
+await Deno.writeTextFile("log.txt", `${now} --\n${entry}\n`, { append: true });
+```
+## Warm & fuzzy security feelings
+![alt text](image-2.png)
+
+## human nature says: `deno -A plod.ts`
+
 

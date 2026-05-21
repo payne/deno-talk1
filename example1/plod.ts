@@ -8,5 +8,4 @@ const now = new Date().toLocaleString("en-US", {
 });
 console.log(`${now} --`);
 const entry = prompt(``);
-console.log(`Log entry is:\n"${entry}"`);
-
+await Deno.writeTextFile("log.txt", `${now} --\n${entry}\n`, { append: true });
