@@ -3,6 +3,7 @@ marp: true
 theme: default
 paginate: true
 header: 'Introduction to Deno'
+footer: 'https://github.com/payne/deno-talk1'
 style: |
   section {
     background-color: #1a1a2e;
@@ -42,30 +43,31 @@ style: |
 
 # Deno is node reimagined and node compatible
 
-* Handy runtime for JavaScript and TypeScript 
-* Builds stand alone executables for Windows, Linux, and Macintosh OS X
+- Handy runtime for JavaScript and TypeScript
+- Builds stand alone executables for Windows, Linux, and Macintosh OS X
 
 ### During this 30-minute talk
-* We'll build a command line utility 
-* We'll build a small web application 
+- We'll build a command line utility
+- We'll build a small web application
 
 ---
 
-# What is Deno?
+# I like deno because
 
-- A **secure** runtime for JavaScript and TypeScript
-- Built on **V8** and written in **Rust**
-- Created by **Ryan Dahl** (original creator of Node.js)
-- First-class TypeScript support (no configuration needed)
-- Ships as a single executable
+- `deno compile` bundles the application to run on computers without deno installed.
+- [deno has a nice security model by default code is not allowed to do more than run (no file system or network access).](https://docs.deno.com/runtime/fundamentals/security/) `-A` for the lazy is handy.
+- Diverse, competitive ecosystems can make things better
 
 ---
 
-# Key Features
+# Let's write some typescript!
 
-- **Secure by default** - No file, network, or environment access unless explicitly enabled
-- **TypeScript out of the box** - No `tsconfig.json` required
-- **Standard library** - Audited, maintained modules
-- **Modern tooling** - Built-in formatter, linter, test runner, bundler
-- **Web-compatible APIs** - `fetch`, `WebSocket`, `localStorage`, etc.
+This talk is not a television episode.  There is a pre-recorded YouTube of this talk if that's your jam.
 
+Let's interact!  Let's have fun!
+
+## Crazy goal -- in 30 minutes or less 
+- We'll build a command line utility -- a simple version of plod
+  - [plod is a 33+ year old utility for keeping a work journal](https://www.usenix.org/legacy/publications/library/proceedings/lisa93/full_papers/pomeranz.pdf) the link takes you to a [USENIX.org](https://www.usenix.org/) paper from 1993.
+- We'll build a small web application
+  - I want to show you a trick that warms my heart
