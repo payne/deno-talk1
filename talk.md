@@ -55,31 +55,6 @@ style: |
   }
 ---
 
-<div class="laser-pointer" id="laser"></div>
-
-<script>
-(function() {
-  const laser = document.getElementById('laser');
-  let laserActive = false;
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'l' || e.key === 'L') {
-      laserActive = !laserActive;
-      laser.classList.toggle('active', laserActive);
-    }
-  });
-
-  document.addEventListener('mousemove', (e) => {
-    if (laserActive) {
-      laser.style.left = e.clientX + 'px';
-      laser.style.top = e.clientY + 'px';
-    }
-  });
-})();
-</script>
-
----
-
 ![w:200](deno-logo.svg)
 
 # Deno is node reimagined and node compatible
