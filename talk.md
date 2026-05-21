@@ -163,3 +163,25 @@ await Deno.writeTextFile(logFilePath(), `${currentNow} --\n${entry}\n`, {
 ```
 
 note the `await` percolates up when we use `async` 
+
+---
+
+# I :heart: `deno compile`
+
+![alt text](image-3.png)
+
+
+---
+
+# Cross compiling is also cool
+
+![alt text](image-4.png)
+
+---
+
+# Well... Actually it's bundling not compiling
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
