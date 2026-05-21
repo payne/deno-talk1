@@ -1,12 +1,16 @@
-import { format } from "jsr:@std/internal@^1.0.5/format";
-
 const currentNow = now();
-const entry = from(Deno.args) ?? from(currentNow);
-await Deno.writeTextFile("log.txt", `${currentNow} --\n${entry}\n`, {
+const entry = entryFrom(Deno.args) ?? entryFrom(currentNow);
+await Deno.writeTextFile(logFilePath(), `${currentNow} --\n${entry}\n`, {
   append: true,
 });
 
-function from(param: string | string[]) {
+function logFilePath() {
+  // TODO: Check for `${HOME}/.plodrc` for now we'll just assume it's not there
+  const path =  Deno.env.get("HOME") ?? "." 
+  return `${path}/plod.log`; // use `.plog.log` to make a "hidden file"
+}
+
+function entryFrom(param: string | string[]) {
   if (Array.isArray(param)) {
     return param.length > 0 ? param.join(" ") : undefined;
   }

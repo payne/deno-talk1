@@ -78,6 +78,8 @@ Let's interact!  Let's have fun!
 
 ![w:600](image.png)
 
+remember: `deno fmt` and `deno lint`
+
 
 ---
 
