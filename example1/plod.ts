@@ -1,3 +1,4 @@
+#!/usr/bin/env -S deno run -A
 const currentNow = now();
 const entry = entryFrom(Deno.args) ?? entryFrom(currentNow);
 await Deno.writeTextFile(logFilePath(), `${currentNow} --\n${entry}\n`, {
