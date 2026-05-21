@@ -6,7 +6,7 @@ await Deno.writeTextFile(logFilePath(), `${currentNow} --\n${entry}\n`, {
 
 function logFilePath() {
   // TODO: Check for `${HOME}/.plodrc` for now we'll just assume it's not there
-  const path =  Deno.env.get("HOME") ?? "." 
+  const path = Deno.env.get("HOME") ?? ".";
   return `${path}/plod.log`; // use `.plog.log` to make a "hidden file"
 }
 
