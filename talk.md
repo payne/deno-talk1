@@ -1,5 +1,6 @@
 ---
 marp: true
+html: true
 theme: default
 paginate: true
 header: 'Introduction to Deno'
@@ -37,6 +38,46 @@ style: |
   header, footer {
     color: #888;
   }
+  .laser-pointer {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle, #ff0000 0%, #ff0000 50%, rgba(255,0,0,0.5) 100%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 2px rgba(255, 0, 0, 0.7);
+  }
+  .laser-pointer.active {
+    display: block;
+  }
+---
+
+<div class="laser-pointer" id="laser"></div>
+
+<script>
+(function() {
+  const laser = document.getElementById('laser');
+  let laserActive = false;
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'l' || e.key === 'L') {
+      laserActive = !laserActive;
+      laser.classList.toggle('active', laserActive);
+    }
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (laserActive) {
+      laser.style.left = e.clientX + 'px';
+      laser.style.top = e.clientY + 'px';
+    }
+  });
+})();
+</script>
+
 ---
 
 ![w:200](deno-logo.svg)
