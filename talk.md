@@ -181,7 +181,28 @@ note the `await` percolates up when we use `async`
 
 # Well... Actually it's bundling not compiling
 
-![alt text](image-5.png)
+![alt text](image-5.png) ![alt text](image-6.png)
 
-![alt text](image-6.png)
+---
+
+# BTW - avoid putting binaries into a git repository
+
+```
+❯ git push
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 66.77 MiB | 7.41 MiB/s, done.
+Total 16 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), completed with 4 local objects.
+remote: warning: See https://gh.io/lfs for more information.
+remote: warning: File example1/plod is 77.36 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: File example1/plod.exe is 91.72 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+To github.com:payne/deno-talk1.git
+   840dea7..f181d5d  main -> main
+```
+
+is github for what the heck!
 
