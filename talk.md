@@ -134,4 +134,12 @@ await Deno.writeTextFile("log.txt", `${now} --\n${entry}\n`, { append: true });
 
 # Put a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) on it!
 
+```
+#!/usr/bin/env -S deno run -A
+const currentNow = now();
+const entry = entryFrom(Deno.args) ?? entryFrom(currentNow);
+await Deno.writeTextFile(logFilePath(), `${currentNow} --\n${entry}\n`, {
+  append: true,
+});
+```
 
