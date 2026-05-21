@@ -27,8 +27,7 @@ jobs:
 
       - name: Build presentation
         run: |
-          cat introduction.md history.md setup.md example1.md example2.md nextsteps.md > presentation.md
-          npx @marp-team/marp-cli presentation.md -o index.html
+          npx @marp-team/marp-cli talk.md -o index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
