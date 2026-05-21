@@ -1,6 +1,6 @@
 #!/usr/bin/env -S deno run -A
 const currentNow = now();
-const entry = entryFrom(Deno.args) ?? entryFrom(currentNow);
+const entry = await entryFrom(Deno.args) ?? await entryFrom(currentNow);
 await Deno.writeTextFile(logFilePath(), `${currentNow} --\n${entry}\n`, {
   append: true,
 });
@@ -11,13 +11,25 @@ function logFilePath() {
   return `${path}/plod.log`; // use `.plog.log` to make a "hidden file"
 }
 
-function entryFrom(param: string | string[]) {
+async function entryFrom(param: string | string[]) {
   if (Array.isArray(param)) {
     return param.length > 0 ? param.join(" ") : undefined;
   }
   const currentNow = param;
   console.log(`${currentNow} --`);
-  return prompt(``);
+  return await multiLinePrompt(``);
+}
+
+async function multiLinePrompt(promptString: string) {
+  if (promptString) console.log(promptString);
+
+  const decoder = new TextDecoder();
+  let input = "";
+
+  for await (const chunk of Deno.stdin.readable) {
+    input += decoder.decode(chunk);
+  }
+  return input;
 }
 
 function now(): string {

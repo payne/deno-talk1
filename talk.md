@@ -132,14 +132,34 @@ await Deno.writeTextFile("log.txt", `${now} --\n${entry}\n`, { append: true });
 
 ---
 
+# allow multiline logs
+
+```
+async function multiLinePrompt(promptString: string) {
+  if (promptString) console.log(promptString);
+
+  const decoder = new TextDecoder();
+  let input = "";
+
+  for await (const chunk of Deno.stdin.readable) {
+    input += decoder.decode(chunk);
+  }
+  return input;
+}
+```
+
+
+---
+
 # Put a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) on it!
 
 ```
 #!/usr/bin/env -S deno run -A
 const currentNow = now();
-const entry = entryFrom(Deno.args) ?? entryFrom(currentNow);
+const entry = await entryFrom(Deno.args) ?? await entryFrom(currentNow);
 await Deno.writeTextFile(logFilePath(), `${currentNow} --\n${entry}\n`, {
   append: true,
 });
 ```
 
+note the `await` percolates up when we use `async` 
