@@ -71,3 +71,12 @@ Let's interact!  Let's have fun!
   - [plod is a 33+ year old utility for keeping a work journal](https://www.usenix.org/legacy/publications/library/proceedings/lisa93/full_papers/pomeranz.pdf) the link takes you to a [USENIX.org](https://www.usenix.org/) paper from 1993.
 - We'll build a small web application
   - I want to show you a trick that warms my heart
+
+---
+
+# Example 1 -- live coding script
+
+1. `deno init` in an empty folder
+
+![w:600](image.png)
+
