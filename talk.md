@@ -74,9 +74,48 @@ Let's interact!  Let's have fun!
 
 ---
 
-# Example 1 -- live coding script
-
-1. `deno init` in an empty folder
+# `deno init` in an empty folder
 
 ![w:600](image.png)
+
+
+---
+
+# `plod` -- happy path one
+1. `brew install plod` on my Macintosh
+2. `plod` looks like this:
+
+![alt text](image-1.png)
+
+---
+
+# Dates frequently involve boiler plate:
+```
+const now = new Date().toLocaleString("en-US", {
+  month: "2-digit",
+  day: "2-digit",
+  year: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  hourCycle: "h23",
+});
+console.log(`${now} --`);
+const entry = prompt(``);
+console.log(`Log entry is:\n"${entry}"`);
+```
+
+---
+
+# `deno plod.ts`
+
+```
+❯ deno plod.ts
+05/20/2026, 20:31 --
+Hello world!  TIL deno has a built in `prompt("What is your name?")` function.
+Log entry is:
+"Hello world!  TIL deno has a built in `prompt("What is your name?")` function."
+```
+
+---
+
 
