@@ -181,7 +181,7 @@ note the `await` percolates up when we use `async`
 
 # Well... Actually it's bundling not compiling
 
-![alt text](image-5.png) ![alt text](image-6.png)
+![w:450](image-5.png) ![w:450](image-6.png)
 
 ---
 
