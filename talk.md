@@ -128,4 +128,8 @@ await Deno.writeTextFile("log.txt", `${now} --\n${entry}\n`, { append: true });
 
 ## human nature says: `deno -A plod.ts`
 
+---
+
+# Put a [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) on it!
+
 
