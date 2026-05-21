@@ -1,5 +1,9 @@
 ![Deno Logo](deno-logo.svg)
 
+# ABOUT THIS BRANCH
+
+The vast majority of this branch was vibe coded.  Saving it here just in case it becomes handy.
+
 # Introduction to Deno
 
 A quick 30-minute introduction to Deno, a modern runtime for JavaScript and TypeScript.
