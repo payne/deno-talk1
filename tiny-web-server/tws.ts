@@ -18,13 +18,13 @@ async function openBrowser(url: string) {
   }
 }
 
-async function main() {
-  // Open browser after a short delay
+function main() {
+  // Open browser after a half second delay
   setTimeout(() => openBrowser(`http://localhost:${PORT}`), 500);
 
-  const server = Deno.serve({ port: PORT }, async (req) => {
+  Deno.serve({ port: PORT }, async (req) => {
     const dateStr = new Date();
-    return new Response(dateStr);
+    return new Response(`Time is now: ${dateStr}`);
   });
 }
 main();

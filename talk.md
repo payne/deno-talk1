@@ -106,6 +106,15 @@ remember: `deno fmt` and `deno lint`
 
 ---
 
+# Dated log entry
+
+```
+const now = new Date();
+console.log(`${now} --`);
+const entry = prompt(``);
+console.log(`Log entry is:\n"${entry}"`);
+```
+
 # Dates frequently involve boiler plate:
 ```
 const now = new Date().toLocaleString("en-US", {
@@ -220,6 +229,47 @@ To github.com:payne/deno-talk1.git
 ```
 
 is github for what the heck!
+
+---
+
+# Launch the local browser
+```
+async function openBrowser(url: string) {
+  const commands: Record<string, string[]> = {
+    darwin: ["open", url],
+    windows: ["cmd", "/c", "start", url],
+    linux: ["xdg-open", url],
+  };
+
+  const cmd = commands[Deno.build.os];
+  if (cmd) {
+    const command = new Deno.Command(cmd[0], {
+      args: cmd.slice(1),
+      stdout: "null",
+      stderr: "null",
+    });
+    await command.spawn();
+  }
+}
+```
+
+---
+
+# Tiny Web Server
+
+```
+function main() {
+  // Open browser after a half second delay
+  setTimeout(() => openBrowser(`http://localhost:${PORT}`), 500);
+
+  Deno.serve({ port: PORT }, async (req) => {
+    const dateStr = new Date();
+    return new Response(`Time is now: ${dateStr}`);
+  });
+}
+main();
+
+```
 
 ---
 
