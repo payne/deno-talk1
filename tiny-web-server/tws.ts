@@ -1,4 +1,4 @@
-  const PORT = 4242;
+const PORT = 4242;
 
 async function openBrowser(url: string) {
   const commands: Record<string, string[]> = {
@@ -19,14 +19,12 @@ async function openBrowser(url: string) {
 }
 
 async function main() {
-
-  
   // Open browser after a short delay
   setTimeout(() => openBrowser(`http://localhost:${PORT}`), 500);
 
-const server = Deno.serve({ port: PORT }, async (req) => {
-  const dateStr = new Date();
-  return new Response(dateStr);
-});
+  const server = Deno.serve({ port: PORT }, async (req) => {
+    const dateStr = new Date();
+    return new Response(dateStr);
+  });
 }
 main();
