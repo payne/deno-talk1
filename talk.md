@@ -115,6 +115,8 @@ const entry = prompt(``);
 console.log(`Log entry is:\n"${entry}"`);
 ```
 
+---
+
 # Dates frequently involve boiler plate:
 ```
 const now = new Date().toLocaleString("en-US", {
