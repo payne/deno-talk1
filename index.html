@@ -102,7 +102,7 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
 
 <p><img src="deno-logo.svg" alt="" style="width:200px;" /></p>
@@ -211,7 +211,7 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
 <h1 id="i-like-deno-because">I like deno because</h1>
 <ul>
@@ -315,7 +315,7 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
 <h1 id="lets-write-some-typescript">Let's write some typescript!</h1>
 <p>This talk is not a television episode.  There is a <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">pre-recorded YouTube</a> of this talk if that's your jam.</p>
@@ -429,11 +429,14 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
-<h1 id="deno-init-in-an-empty-folder"><code>deno init</code> in an empty folder</h1>
-<p><img src="image.png" alt="" style="width:600px;" /></p>
-<p>remember: <code>deno fmt</code> and <code>deno lint</code></p>
+<h1 id="plod----happy-path-one"><code>plod</code> -- happy path one</h1>
+<ol>
+<li><code>brew install plod</code> on my Macintosh</li>
+<li><code>plod</code> looks like this:</li>
+</ol>
+<p><img src="image-1.png" alt="alt text" /></p>
 <footer><a href="https://github.com/payne/deno-talk1">https://github.com/payne/deno-talk1</a></footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="Introduction to Deno" data-footer="https://github.com/payne/deno-talk1" data-theme="default" data-style="section {
@@ -530,14 +533,11 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
-<h1 id="plod----happy-path-one"><code>plod</code> -- happy path one</h1>
-<ol>
-<li><code>brew install plod</code> on my Macintosh</li>
-<li><code>plod</code> looks like this:</li>
-</ol>
-<p><img src="image-1.png" alt="alt text" /></p>
+<h1 id="deno-init-in-an-empty-folder"><code>deno init</code> in an empty folder</h1>
+<p><img src="image.png" alt="" style="width:600px;" /></p>
+<p>remember: <code>deno fmt</code> and <code>deno lint</code></p>
 <footer><a href="https://github.com/payne/deno-talk1">https://github.com/payne/deno-talk1</a></footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="Introduction to Deno" data-footer="https://github.com/payne/deno-talk1" data-theme="default" data-style="section {
@@ -634,7 +634,7 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
 <h1 id="dated-log-entry">Dated log entry</h1>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>const now = new Date();
@@ -738,7 +738,7 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
 <h1 id="dates-frequently-involve-boiler-plate">Dates frequently involve boiler plate:</h1>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>const now = new Date().toLocaleString(&quot;en-US&quot;, {
@@ -849,7 +849,7 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
 <h1 id="deno-plodts"><code>deno plod.ts</code></h1>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>❯ deno plod.ts
@@ -954,7 +954,7 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
 <h1 id="await-for-the-output-to-finish">await for the output to finish</h1>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>await Deno.writeTextFile(&quot;log.txt&quot;, `${now} --\n${entry}\n`, { append: true });
@@ -1058,7 +1058,7 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
 <h1 id="allow-multiline-logs">allow multiline logs</h1>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>async function multiLinePrompt(promptString: string) {
@@ -1169,17 +1169,20 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
-<h1 id="put-a-shebang-on-it">Put a <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> on it!</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>#!/usr/bin/env -S deno run -A
-const currentNow = now();
-const entry = await entryFrom(Deno.args) ?? await entryFrom(currentNow);
-await Deno.writeTextFile(logFilePath(), `${currentNow} --\n${entry}\n`, {
-  append: true,
-});
+<h1 id="take-entry-from-command-line-or-stdin">Take entry from command line or stdin</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>const entry = await entryFrom(Deno.args) ?? await entryFrom(currentNow);
+
+async function entryFrom(param: string | string[]) {
+  if (Array.isArray(param)) {
+    return param.length &gt; 0 ? param.join(&quot; &quot;) : undefined;
+  }
+  const currentNow = param;
+  console.log(`${currentNow} --`);
+  return await multiLinePrompt(``);
+}
 </code></pre>
-<p>note the <code>await</code> percolates up when we use <code>async</code></p>
 <footer><a href="https://github.com/payne/deno-talk1">https://github.com/payne/deno-talk1</a></footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="Introduction to Deno" data-footer="https://github.com/payne/deno-talk1" data-theme="default" data-style="section {
@@ -1276,10 +1279,17 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
-<h1 id="i-%E2%9D%A4%EF%B8%8F-deno-compile">I <img class="emoji" draggable="false" alt="❤️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2764.svg" data-marp-twemoji=""/> <code>deno compile</code></h1>
-<p><img src="image-3.png" alt="alt text" /></p>
+<h1 id="put-a-shebang-on-it">Put a <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> on it!</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>#!/usr/bin/env -S deno run -A
+const currentNow = now();
+const entry = await entryFrom(Deno.args) ?? await entryFrom(currentNow);
+await Deno.writeTextFile(logFilePath(), `${currentNow} --\n${entry}\n`, {
+  append: true,
+});
+</code></pre>
+<p>note the <code>await</code> percolates up when we use <code>async</code></p>
 <footer><a href="https://github.com/payne/deno-talk1">https://github.com/payne/deno-talk1</a></footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="Introduction to Deno" data-footer="https://github.com/payne/deno-talk1" data-theme="default" data-style="section {
@@ -1376,10 +1386,10 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
-<h1 id="cross-compiling-is-also-cool">Cross compiling is also cool</h1>
-<p><img src="image-4.png" alt="alt text" /></p>
+<h1 id="i-%E2%9D%A4%EF%B8%8F-deno-compile">I <img class="emoji" draggable="false" alt="❤️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2764.svg" data-marp-twemoji=""/> <code>deno compile</code></h1>
+<p><img src="image-3.png" alt="alt text" /></p>
 <footer><a href="https://github.com/payne/deno-talk1">https://github.com/payne/deno-talk1</a></footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="Introduction to Deno" data-footer="https://github.com/payne/deno-talk1" data-theme="default" data-style="section {
@@ -1476,10 +1486,10 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
-<h1 id="well-actually-its-bundling-not-compiling">Well... Actually it's bundling not compiling</h1>
-<p><img src="image-5.png" alt="" style="width:450px;" /> <img src="image-6.png" alt="" style="width:450px;" /></p>
+<h1 id="cross-compiling-is-also-cool">Cross compiling is also cool</h1>
+<p><img src="image-4.png" alt="alt text" /></p>
 <footer><a href="https://github.com/payne/deno-talk1">https://github.com/payne/deno-talk1</a></footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="Introduction to Deno" data-footer="https://github.com/payne/deno-talk1" data-theme="default" data-style="section {
@@ -1576,25 +1586,10 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
-<h1 id="btw---avoid-putting-binaries-into-a-git-repository">BTW - avoid putting binaries into a git repository</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>❯ git push
-Enumerating objects: 21, done.
-Counting objects: 100% (21/21), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (16/16), done.
-Writing objects: 100% (16/16), 66.77 MiB | 7.41 MiB/s, done.
-Total 16 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (7/7), completed with 4 local objects.
-remote: warning: See https://gh.io/lfs for more information.
-remote: warning: File example1/plod is 77.36 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
-remote: warning: File example1/plod.exe is 91.72 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
-remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
-To github.com:payne/deno-talk1.git
-   840dea7..f181d5d  main -&gt; main
-</code></pre>
-<p>is github for what the heck!</p>
+<h1 id="well-actually-its-bundling-not-compiling">Well... Actually it's bundling not compiling</h1>
+<p><img src="image-5.png" alt="" style="width:450px;" /> <img src="image-6.png" alt="" style="width:450px;" /></p>
 <footer><a href="https://github.com/payne/deno-talk1">https://github.com/payne/deno-talk1</a></footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="Introduction to Deno" data-footer="https://github.com/payne/deno-talk1" data-theme="default" data-style="section {
@@ -1691,27 +1686,25 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
-<h1 id="launch-the-local-browser">Launch the local browser</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>async function openBrowser(url: string) {
-  const commands: Record&lt;string, string[]&gt; = {
-    darwin: [&quot;open&quot;, url],
-    windows: [&quot;cmd&quot;, &quot;/c&quot;, &quot;start&quot;, url],
-    linux: [&quot;xdg-open&quot;, url],
-  };
-
-  const cmd = commands[Deno.build.os];
-  if (cmd) {
-    const command = new Deno.Command(cmd[0], {
-      args: cmd.slice(1),
-      stdout: &quot;null&quot;,
-      stderr: &quot;null&quot;,
-    });
-    await command.spawn();
-  }
-}
+<h1 id="btw---avoid-putting-binaries-into-a-git-repository">BTW - avoid putting binaries into a git repository</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>❯ git push
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 66.77 MiB | 7.41 MiB/s, done.
+Total 16 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), completed with 4 local objects.
+remote: warning: See https://gh.io/lfs for more information.
+remote: warning: File example1/plod is 77.36 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: File example1/plod.exe is 91.72 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+To github.com:payne/deno-talk1.git
+   840dea7..f181d5d  main -&gt; main
 </code></pre>
+<p>is github for what the heck!</p>
 <footer><a href="https://github.com/payne/deno-talk1">https://github.com/payne/deno-talk1</a></footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="Introduction to Deno" data-footer="https://github.com/payne/deno-talk1" data-theme="default" data-style="section {
@@ -1808,20 +1801,26 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
-<h1 id="tiny-web-server">Tiny Web Server</h1>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>function main() {
-  // Open browser after a half second delay
-  setTimeout(() =&gt; openBrowser(`http://localhost:${PORT}`), 500);
+<h1 id="launch-the-local-browser">Launch the local browser</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>async function openBrowser(url: string) {
+  const commands: Record&lt;string, string[]&gt; = {
+    darwin: [&quot;open&quot;, url],
+    windows: [&quot;cmd&quot;, &quot;/c&quot;, &quot;start&quot;, url],
+    linux: [&quot;xdg-open&quot;, url],
+  };
 
-  Deno.serve({ port: PORT }, async (req) =&gt; {
-    const dateStr = new Date();
-    return new Response(`Time is now: ${dateStr}`);
-  });
+  const cmd = commands[Deno.build.os];
+  if (cmd) {
+    const command = new Deno.Command(cmd[0], {
+      args: cmd.slice(1),
+      stdout: &quot;null&quot;,
+      stderr: &quot;null&quot;,
+    });
+    await command.spawn();
+  }
 }
-main();
-
 </code></pre>
 <footer><a href="https://github.com/payne/deno-talk1">https://github.com/payne/deno-talk1</a></footer>
 </section>
@@ -1919,7 +1918,118 @@ header, footer {
 .laser-pointer.active {
   display: block;
 }
-;" data-marpit-pagination-total="18">
+;" data-marpit-pagination-total="19">
+<header>Introduction to Deno</header>
+<h1 id="tiny-web-server">Tiny Web Server</h1>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code>function main() {
+  // Open browser after a half second delay
+  setTimeout(() =&gt; openBrowser(`http://localhost:${PORT}`), 500);
+
+  Deno.serve({ port: PORT }, async (req) =&gt; {
+    const dateStr = new Date();
+    return new Response(`Time is now: ${dateStr}`);
+  });
+}
+main();
+
+</code></pre>
+<footer><a href="https://github.com/payne/deno-talk1">https://github.com/payne/deno-talk1</a></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="Introduction to Deno" data-footer="https://github.com/payne/deno-talk1" data-theme="default" data-style="section {
+  background-color: #1a1a2e;
+  color: #eaeaea;
+}
+h1 {
+  color: #70c7ff;
+}
+h2 {
+  color: #b8b8b8;
+}
+strong {
+  color: #70c7ff;
+}
+code {
+  background-color: #2d2d44;
+  color: #f8f8f2;
+}
+pre {
+  background-color: #2d2d44;
+}
+a {
+  color: #70c7ff;
+}
+table {
+  color: #eaeaea;
+}
+th {
+  background-color: #2d2d44;
+}
+header, footer {
+  color: #888;
+}
+.laser-pointer {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, #ff0000 0%, #ff0000 50%, rgba(255,0,0,0.5) 100%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  display: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 2px rgba(255, 0, 0, 0.7);
+}
+.laser-pointer.active {
+  display: block;
+}
+" lang="en-US" data-marpit-pagination="19" style="--paginate:true;--header:Introduction to Deno;--footer:https://github.com/payne/deno-talk1;--theme:default;--style:section {
+  background-color: #1a1a2e;
+  color: #eaeaea;
+}
+h1 {
+  color: #70c7ff;
+}
+h2 {
+  color: #b8b8b8;
+}
+strong {
+  color: #70c7ff;
+}
+code {
+  background-color: #2d2d44;
+  color: #f8f8f2;
+}
+pre {
+  background-color: #2d2d44;
+}
+a {
+  color: #70c7ff;
+}
+table {
+  color: #eaeaea;
+}
+th {
+  background-color: #2d2d44;
+}
+header, footer {
+  color: #888;
+}
+.laser-pointer {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle, #ff0000 0%, #ff0000 50%, rgba(255,0,0,0.5) 100%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  display: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 2px rgba(255, 0, 0, 0.7);
+}
+.laser-pointer.active {
+  display: block;
+}
+;" data-marpit-pagination-total="19">
 <header>Introduction to Deno</header>
 <h1 id="red-burns-lives-on"><a href="https://rhizome.org/editorial/2013/aug/26/red-burns-lives-on/">Red Burns lives on</a></h1>
 <h2 id="technology-is-not-enough"><a href="https://rhizome.org/editorial/2013/aug/26/red-burns-lives-on/">“Technology is Not Enough”</a></h2>

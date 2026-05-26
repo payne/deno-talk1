@@ -89,20 +89,22 @@ Let's interact!  Let's have fun!
 
 ---
 
-# `deno init` in an empty folder
-
-![w:600](image.png)
-
-remember: `deno fmt` and `deno lint`
-
-
----
 
 # `plod` -- happy path one
 1. `brew install plod` on my Macintosh
 2. `plod` looks like this:
 
 ![alt text](image-1.png)
+
+
+---
+
+# `deno init` in an empty folder
+
+![w:600](image.png)
+
+remember: `deno fmt` and `deno lint`
+
 
 ---
 
@@ -174,6 +176,22 @@ async function multiLinePrompt(promptString: string) {
 }
 ```
 
+
+---
+
+# Take entry from command line or stdin
+```
+const entry = await entryFrom(Deno.args) ?? await entryFrom(currentNow);
+
+async function entryFrom(param: string | string[]) {
+  if (Array.isArray(param)) {
+    return param.length > 0 ? param.join(" ") : undefined;
+  }
+  const currentNow = param;
+  console.log(`${currentNow} --`);
+  return await multiLinePrompt(``);
+}
+```
 
 ---
 
