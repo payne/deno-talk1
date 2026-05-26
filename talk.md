@@ -77,7 +77,7 @@ style: |
 
 # Let's write some typescript!
 
-This talk is not a television episode.  There is a [pre-recorded YouTube](https://www.youtube.com/watch?v=dQw4w9WgXcQ) of this talk if that's your jam.
+This talk is not a television episode.  There is a [pre-recorded YouTube](https://youtu.be/NxrNI9Zc3-E) of this talk if that's your jam.
 
 Let's interact!  Let's have fun!
 
