@@ -25,14 +25,7 @@ async function main() {
   setTimeout(() => openBrowser(`http://localhost:${PORT}`), 500);
 
 const server = Deno.serve({ port: PORT }, async (req) => {
-  const dateStr = new Date().toLocaleString("en-US", {
-  month: "2-digit",
-  day: "2-digit",
-  year: "numeric",
-  hour: "2-digit",
-  minute: "2-digit",
-  hourCycle: "h23",
-});
+  const dateStr = new Date();
   return new Response(dateStr);
 });
 }
