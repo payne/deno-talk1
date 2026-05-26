@@ -1,0 +1,39 @@
+  const PORT = 4242;
+
+async function openBrowser(url: string) {
+  const commands: Record<string, string[]> = {
+    darwin: ["open", url],
+    windows: ["cmd", "/c", "start", url],
+    linux: ["xdg-open", url],
+  };
+
+  const cmd = commands[Deno.build.os];
+  if (cmd) {
+    const command = new Deno.Command(cmd[0], {
+      args: cmd.slice(1),
+      stdout: "null",
+      stderr: "null",
+    });
+    await command.spawn();
+  }
+}
+
+async function main() {
+
+  
+  // Open browser after a short delay
+  setTimeout(() => openBrowser(`http://localhost:${PORT}`), 500);
+
+const server = Deno.serve({ port: PORT }, async (req) => {
+  const dateStr = new Date().toLocaleString("en-US", {
+  month: "2-digit",
+  day: "2-digit",
+  year: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  hourCycle: "h23",
+});
+  return new Response(dateStr);
+});
+}
+main();

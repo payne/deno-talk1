@@ -62,9 +62,8 @@ style: |
 - Handy runtime for JavaScript and TypeScript
 - Builds stand alone executables for Windows, Linux, and Macintosh OS X
 
-### During this 30-minute talk
+### During this 30-minute discussion
 - We'll build a command line utility
-- We'll build a small web application
 
 ---
 
@@ -82,10 +81,10 @@ This talk is not a television episode.  There is a pre-recorded YouTube of this 
 
 Let's interact!  Let's have fun!
 
-## Crazy goal -- in 30 minutes or less 
+## Goal -- in 30 minutes or less 
 - We'll build a command line utility -- a simple version of plod
   - [plod is a 33+ year old utility for keeping a work journal](https://www.usenix.org/legacy/publications/library/proceedings/lisa93/full_papers/pomeranz.pdf) the link takes you to a [USENIX.org](https://www.usenix.org/) paper from 1993.
-- We'll build a small web application
+- Show off a tiny hello world web application
   - I want to show you a trick that warms my heart
 
 ---
